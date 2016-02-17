@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title></title>
+    <link rel="stylesheet" type="text/css" href="<?php bloginfo('css/style.css'); ?>" />
+<title>Dainelle Riley Blank Template</title>
 </head>
 <body>
     <body>
