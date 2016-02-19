@@ -1,15 +1,27 @@
 <?php get_header(); ?>
     <section class="row">
-        <div class="twelve columns">
-    <!-- BEGIN SINGLE PHP -->
-            <?php if (have_posts()) :
-                /* OUR DATA CONTEXT IS DEFINED  */              
-                while (have_posts()) : the_post(); ?> 
-                    <h2><?php the_title(); ?></h2>
-                    <?php the_content();
-                endwhile;
-            endif; ?>
-<!-- END SINGLE PHP -->
+        <div class="two columns">
+        <br/>
         </div>
-    </section>
+        <div class="eight columns">
+             <?php 
+             if ( have_posts() ) {
+                while ( have_posts() ) {
+                     the_post(); ?> 
+                    <h3><?php the_title(); ?></h3>
+                    <?php if ( has_post_thumbnail() ) {
+                        ?> <div class="single-post-thumbnail">
+                        <?php  the_post_thumbnail('large'); ?>
+                        </div>
+                        <?php
+                        }  
+                        the_content();
+                } // end while
+             }  // end if
+             ?>
+        </div>
+        <div class="two columns">
+                <br/>
+        </div>
+            </section>
 <?php get_footer(); ?>
