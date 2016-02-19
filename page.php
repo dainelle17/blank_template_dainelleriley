@@ -10,8 +10,7 @@
             endif; ?>
         </div>
          <div class="three columns">
-            <h3>Sidebar Text</h3>
-            <p>This is the sidebar content to put in here.</p>
+            <?php get_sidebar(); ?>
         </div>
     </div>
 <?php get_footer(); ?>
