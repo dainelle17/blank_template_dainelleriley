@@ -18,7 +18,7 @@ get_header(); ?>
                 <?php the_excerpt(); ?>
             <?php endwhile; ?> <!-- End Loop -->
         <?php else: ?>
-        	<p>Sorry, no posts matched your criteria.</p>
+        	<p>Sorry, no posts matched your search.</p>
         <?php endif; ?>
     </div>
 </section>
