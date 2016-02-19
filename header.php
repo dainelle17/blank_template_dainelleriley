@@ -3,7 +3,7 @@
 <head>
     <title>Dainelle Riley Blank Template</title>
 <?php wp_head(); ?>
-    <link rel="stylesheet" type="text/css" href="<?php bloginfo('css/style.css'); ?>" />
+    <link rel="stylesheet" type="text/css" href="<?php bloginfo('style.css'); ?>" />
 </head>
     <body>
         <div class="container">
