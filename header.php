@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<title><?php bloginfo('name'); ?></title>
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>">
-<?php wp_head(); ?>
+<?php wp_head();?>
 </head>
 <body>
 	<div class ="container">
@@ -14,7 +14,7 @@
 				<h2> <?php bloginfo('description'); ?></h2>
 			</div>
 			<div class="three columns">
-				<?php get_search_form(); ?>
+				<?php get_search_form();?>
 			</div>	
 		</header>
 		<!-- Add Menu Here -->

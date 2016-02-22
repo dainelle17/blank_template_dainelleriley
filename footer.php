@@ -1,9 +1,14 @@
  <footer class="row">
-                <div class="twelve columns">
-                    <p>Footer content goes here.</p>
-                </div>
-            </footer>
-        </div> <!-- ends container -->
-    <?php wp_footer(); ?>
-    </body>
-</html>
+     <div class="four columns">
+         <?php dynamic_sidebar('footer-left'); ?>
+    </div>
+     
+     <div class="four columns">
+       <?php dynamic_sidebar('footer-middle'); ?>
+    </div>
+    <div class="four columns">
+     <?php dynamic_sidebar('footer-right'); ?>
+    </div>
+</footer>
+
+<?php wp_footer(); ?>
