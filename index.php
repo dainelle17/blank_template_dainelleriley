@@ -1,8 +1,9 @@
-<?php get_header(); ?>               
-    <section class="row">
-        <div class="twelve columns">              
-            <?php
-                if ( have_posts() ) {
+<?php get_header(); ?>         
+                
+			<section class="row">
+                <div class="twelve columns">              
+                	<?php
+                    if ( have_posts() ) {
                         while ( have_posts() ) {
                         	the_post(); ?>
                         	<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
@@ -15,5 +16,6 @@
                     } //end if
                     ?>
                 </div>
-            </section>  
+            </section>
+                    
  <?php get_footer(); ?>

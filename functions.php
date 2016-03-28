@@ -1,6 +1,5 @@
 <?php 
 /*-------------- Enable Widgets--------------- */
-
 function blank_widgets_init() {
     register_sidebar( array(
         'name' => ('First Widget'),
@@ -40,13 +39,8 @@ function blank_widgets_init() {
         ));
 }
 add_action('widgets_init', 'blank_widgets_init');
-
 /*-------------- Enable Menu --------------- */
-
 add_theme_support('menus');
-
-
 /*--- Enable Post Thumbnails ---*/
 add_theme_support( 'post-thumbnails' ); 
-
-?> 
+?>
